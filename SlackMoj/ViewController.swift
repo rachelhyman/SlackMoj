@@ -8,11 +8,21 @@
 
 import UIKit
 
+import SlackKit
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let bot = SlackKit()
+        let oauthConfig = OAuthConfig(clientID: "", clientSecret: "")
+        bot.addServer(oauth: oauthConfig)
+        bot.webAPI?.emojiList(success: { (emojis) in
+            print(emojis)
+        }, failure: { (error) in
+            print(error)
+        })
     }
 
 
