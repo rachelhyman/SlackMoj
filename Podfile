@@ -6,5 +6,6 @@ target 'SlackMoj' do
   use_frameworks!
 
   # Pods for SlackMoj
+  pod 'SlackKit'
 
 end

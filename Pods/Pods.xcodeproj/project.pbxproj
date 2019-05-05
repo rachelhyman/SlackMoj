@@ -1,0 +1,1423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A2FCA1331F116454D9EC46A876C562 /* ClientConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AA6DD1BE9281603C677B04DCD3CD6 /* ClientConnection.swift */; };
+		00D7921E580BE93CA4DBFBC998EA9CD3 /* DoNotDisturbStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D342EA0CEA86769053DF841A57897 /* DoNotDisturbStatus.swift */; };
+		01840744520DB863660451F5E16145FA /* MimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31996B6EF1B679FECE76795702CF542 /* MimeTypes.swift */; };
+		03C3D6C49E972C79651176E13BE4D3F3 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA92EFEDBF178EE8C5D707A372CAA755 /* Files.swift */; };
+		08055FCA8BC396F5A6233FB07395C495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B424D43E1144FAAD606EE8A9D15EDBA0 /* Foundation.framework */; };
+		08ABE1ED63A87A8A441297507CD6971E /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1316AAC8CD504BF704920056DB7D6C23 /* DemoServer.swift */; };
+		0904ABE31C8E0FFDB8E016EDD6776A72 /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA88D50F69F12D424204ED2788EFE34 /* StarscreamRTM.swift */; };
+		0D3E415AF9D48903C2607205D04C9B65 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF667245B58150D45522FC9F17C2BF9 /* Client.swift */; };
+		0E48DD7499B14B46D8776D4462C72D05 /* IncomingWebhook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230904805549AE3229EE82020B10D578 /* IncomingWebhook.swift */; };
+		13392545C52B5BC4C6AAC226B3AA8A3E /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C908EBD8BDC1E197BBFBAAC80C5054A /* Socket.swift */; };
+		13D26CBDD9AA43AB73BFF1EBAD308C09 /* String+BASE64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2FA47E29EEC22C1CF060225663C7C8 /* String+BASE64.swift */; };
+		1757A701C0B692BB3CA714AD9A0DC7EC /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E048960B1789C7B844DB4D20DAABA72 /* HttpParser.swift */; };
+		18ED1B1162C9DF2702A89ECC5C36BC1A /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439D93C6B28F4A209C52F72BF92A0D4 /* Starscream-dummy.m */; };
+		2163A32DECEDD096FED2CEFFD51BDC58 /* MessageActionRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D761E7957A2323EBCF61C050BF8618 /* MessageActionRoute.swift */; };
+		21F63C9884A95E1EAFB93A1DADB99D7A /* Errno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1418A09339B6C9D701370D8B0ACE72 /* Errno.swift */; };
+		229D817BA25824F04CC883C8707DB677 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F1C4766454C24783A78CC7904164D /* Endpoint.swift */; };
+		235C30A5FBDBC7E9A68E41B1501B1C39 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB09EE8418690B5543881218E601A70C /* Topic.swift */; };
+		26DCD0E0691DC3A944EA5B41597BAB31 /* SlackKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE539A518B1349F2837E4F678F88B674 /* SlackKit-dummy.m */; };
+		2992513EB9B88388C4FF2DBF1160CD94 /* AuthorizeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399D5797EB67F5A0F5182F46D1429754 /* AuthorizeResponse.swift */; };
+		2AD3F0FBFDB883FF6ECC816BD59F37C5 /* MessageActionMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C1EC9C092568EB6D8F88D18A4BD1E /* MessageActionMiddleware.swift */; };
+		3423B148069A194496F2B08A20148DB3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C22578F6EDF6899DB3B56A94F8B7436 /* Extensions.swift */; };
+		34F28A64B973AA30DF17234532B3460C /* SlackKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7FE3E53DB00EA9E8044EFDE4B9E9EA0 /* SlackKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37403D300EB6D569A064AD2A7BB7E215 /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA98D156C16D87786DD0A5B0AA779D /* NetworkInterface.swift */; };
+		3765847A23D878765E13ABAE0129E420 /* CustomProfileField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6507C87E5C3420DAE210809D125E9C5 /* CustomProfileField.swift */; };
+		37AF7729CC9498C11F136CCB0796389B /* RTMOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1812A85FB0C89B90109FE27DA90DE /* RTMOptions.swift */; };
+		38E735BFB44302DDF3232FC46BFF91B7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08AC50AEAC826266725F578EDD7307 /* File.swift */; };
+		3A6A893B0F9ECDFF1FFF5C602C38A797 /* ResponseMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102D6C41C3579ED3067DD3815EE4589C /* ResponseMiddleware.swift */; };
+		3F40D77DCE144AB3392EB217DA844F6A /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45153F3C48046FC3ABD965F6AF0475AC /* Comment.swift */; };
+		40BE17C70049FFEB3A550015FCA1051B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B424D43E1144FAAD606EE8A9D15EDBA0 /* Foundation.framework */; };
+		41ED3830B4AAFE042B3146FB00A3E397 /* SlackKitResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49EC19D68CC546B24D10E9145CCA02 /* SlackKitResponder.swift */; };
+		431DA5CFED383D17B6542E31BEC0673A /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E1371FDEC9AC6BB19B3BD716BF2C52 /* WebSockets.swift */; };
+		450869A48DFFC16D4EE2B42D8083FB82 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5386C1BCF545952B0E418E320E617 /* Process.swift */; };
+		472237C38282CE8CF4D7897AE810C84D /* RequestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4EDEBC7E9ED93BC02A3E9333FD49F /* RequestRoute.swift */; };
+		49E8D73485D3269A768EDE328AA0AB23 /* Titan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57767E89E7C685DF6A60367B18AE40D5 /* Titan.swift */; };
+		4AD94D0D9B9193F23297A20D25438B43 /* TitanParameterizedRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473DAD977BBB40FB2F7A6C0C579D3F91 /* TitanParameterizedRoutes.swift */; };
+		4BC1E18C30730E59371F709B619EB856 /* SKRTMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A41662F2528863C95306E214DCCFF31 /* SKRTMAPI.swift */; };
+		4DB73285E2517CDF85FE31262CCD72AA /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8035D5B547E2DC6CF8C197BF4AB464 /* WebAPI.swift */; };
+		4E359A6596368F1BE93A9A27A9DDBD0C /* Edited.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05248A7D7C06CB8FC7DF0DD8CCE506B /* Edited.swift */; };
+		56321789E1CAC330DC969C59B19BE503 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262FEEA7AA49EB3461040CFDFF3C4863 /* Message.swift */; };
+		5657ED221A25C0A2C14ED50388EE4F83 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FD8445068844C292107839F6A2098B /* HttpRequest.swift */; };
+		5717CF0CBAD88D1059EA1E02E9DBA912 /* TitanRoutesByMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1F34F4A104DF1C85D630B351AB38EA /* TitanRoutesByMethod.swift */; };
+		5D0B38466C8574E236DA1417505FC29A /* TitanCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE197DA090A9A89D1BB9C3A2859A876 /* TitanCore.swift */; };
+		5D6BE4158B954E29434B22E967BA755C /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B929202D666D46161FF94FB19B9F0 /* HttpResponse.swift */; };
+		5E5418C624FF6E905E15DB9DE50D8420 /* TitanJSONRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B3216BE2443DC59AD60A24BB0BFAC /* TitanJSONRequestBody.swift */; };
+		6358BF18ED693B2D673BDE9E3D105BDB /* TeamIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524C107D063F5B32569D0DA7C33F9C5 /* TeamIcon.swift */; };
+		6815C0C7EF13496E29D180EE64E5C2D1 /* String+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BCF6B388C12BBAC9D88018512A15E7 /* String+SHA1.swift */; };
+		68E579D9EAE4CD69139B52D1D001009D /* CustomProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA37E192A876E071582824B2B21FB3 /* CustomProfile.swift */; };
+		7325F7AC1009909B04FD467F3AEB05FA /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60134394D36CE09D1EE4A65D1778394F /* HttpServer.swift */; };
+		744AAA05740842FCEA11650C5BF45032 /* MessageActionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B4A51F812A1C5D3DB7576BACD486B /* MessageActionRequest.swift */; };
+		745C09B646CFA90F19666C044C7C9B5E /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B836F70E160C02806C53ED178C05E3 /* SSLClientCertificate.swift */; };
+		75F76E6D842BCC6090653673014FF41E /* Swifter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 612A33B97C914F9EDADAC82173951B70 /* Swifter-dummy.m */; };
+		76F430B1CB5B37D318AD45061254A16D /* RedirectMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379AC4FA5ECC9C903C2238D3BFF655A /* RedirectMiddleware.swift */; };
+		7AD004566AF8783AE87952E25A440D76 /* TitanMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4A390E0A34672880DA05945A529E5 /* TitanMethod.swift */; };
+		7B51C656E8066E1B87961853D20D1DDA /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88AA0523F38EAF40CA4A65591F9ACF /* Team.swift */; };
+		7CB810AC8E04A517F1CCACAA47E3CF30 /* OAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9758EDC029FA0E6645BD9A969FFF9B71 /* OAuthResponse.swift */; };
+		7CB8726ACFEFBB05795702F583CDEB83 /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646E25434E70A0172E488F3FA130B77B /* Swifter.framework */; };
+		7CF5FFD3A1F64B9DC8D3C4CBA86F6655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B424D43E1144FAAD606EE8A9D15EDBA0 /* Foundation.framework */; };
+		7E1F534AA4B28DE5CD4A4D1BCDA6AEFE /* OAuthMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E39789AC4404243F4B72C2670C254AF /* OAuthMiddleware.swift */; };
+		832B0A6F9E54194424A4013024686F13 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29086B68C2C91EEE3CAB72E863739A7 /* WebSocket.swift */; };
+		83B6FD1BA41F1E2B206A40C996EE87B5 /* Pods-SlackMoj-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 468931EFA441C585424865F38C4EE0B6 /* Pods-SlackMoj-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85A02E10DB2E85AD01D8DA8852E8419C /* Socket+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A701529BBE43CB8586EDFFA33EAB085 /* Socket+File.swift */; };
+		876C0C399BE82E6A7F980B6BF48D39B0 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1310E94A5B17604AAFF7BE822778FD81 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89DA6E278343ED67D053571E55D7C360 /* Titan404.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584B694B66EF0180D3037BDA16E58A8 /* Titan404.swift */; };
+		8E737D13E150C4E947FC18EA0B0958D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B424D43E1144FAAD606EE8A9D15EDBA0 /* Foundation.framework */; };
+		8FA404F5E16B480D2CC85AADB998B51F /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4D4141C8F1898A01C61F786CDE5EA /* Channel.swift */; };
+		914FBC76396A7D70E47B628C5A721250 /* SwifterServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F652F3BD35272913B2AD52106B4C481F /* SwifterServer.swift */; };
+		9531A4023AA4ADF327BE001C829FD21E /* PathParameterSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA3BB8BD56FCA92A99225A140B602A /* PathParameterSupport.swift */; };
+		955F616D902CB7A7B4754AC501D08C5C /* SKServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AE851F35DAA294C79E94AD93BE3284 /* SKServer.swift */; };
+		96464F65F783ABFED0A1AB1C858C74F0 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855A35967BF23E533B4C666713E9ABB /* HttpRouter.swift */; };
+		99C93B1ACEE1BE294EA39B3C437E747D /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF85E2FE64493115C484611057210D82 /* Action.swift */; };
+		9AAB2DAE090EA1FBB9214C9CE15019A2 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9030069E892F320C2589EC56F1602CE /* Attachment.swift */; };
+		9CC14E0131297CA99CE8CD7AAFDCFB3A /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4BC770ABE78FA235E0D1FB28D59769 /* Socket+Server.swift */; };
+		9D572310D528977E924919810EA1D5B3 /* TitanFormURLEncodedBodyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C49983C27668B5ED5CE5301B2652043 /* TitanFormURLEncodedBodyParser.swift */; };
+		9D6D7DB5768FF6603E7E16F70EF766C3 /* Bot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E74B520E27BB84AA9A32A08FF4CD551 /* Bot.swift */; };
+		A6318C784CB8F2F66E55A231AA843E19 /* AttachmentField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A2C658DE629E090283658DB2043E6 /* AttachmentField.swift */; };
+		ADD1AF25D0C80A416D1969A27BBD06B0 /* HttpServerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D1B53C3D4C847F9E0F467139F613B9 /* HttpServerIO.swift */; };
+		AEE12F9FBFE079C4BC0656BE8FC7308E /* OAuthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6479B0CCF9991E77D7D7150C2B716DE7 /* OAuthConfig.swift */; };
+		B48A13AA3322998827DA7550F773D302 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B92BC6271B14F926BF7132D2A1B163E /* Event.swift */; };
+		BD7379B4699EDA71887DB97BFDAEDBCC /* TitanHealthz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46641492D675149BECED59A09E4D5436 /* TitanHealthz.swift */; };
+		BD7DDB96643F85D1AAC8C2F22E7439F8 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E12BED3F62EF254E4D105F8716C83C /* Compression.swift */; };
+		BDF0585851A3A11B785F2087233AE9B6 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17C98D8F8DEEFE8E1FF95A280270339 /* History.swift */; };
+		C3CA9C888C8AEA0E54175506054B1CCE /* TitanJSONResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CFE6C2E05FE678819F2F32521D75E0 /* TitanJSONResponseBody.swift */; };
+		C4239EBCB9EF983737E836A5E8569956 /* TitanError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF29C066B8016EC1422B43E29CE22F /* TitanError.swift */; };
+		CA20670FDBDF6DB3BAA1EE9BF2F1FE11 /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190403FB086A89FFE120B9507AC3D6A /* String+Misc.swift */; };
+		CB04BFC900275EFA329D270B41E9338F /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1271F5C119702A87436BF76E9CCAA2 /* Starscream.framework */; };
+		D053F2F99AA4FD425837486079CF3C70 /* UserGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7550C98040E73CEA67074DA19042DCF /* UserGroup.swift */; };
+		D0C2F8A6DA0F0C18F709A4BC3B8BE0DE /* TitanCORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950A1AA244A2F04B6EF5AC227682063 /* TitanCORS.swift */; };
+		D3E73668245F06CBE4BD67B2B8252DDC /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AB93EF6320EB0C88C663941060893 /* String+File.swift */; };
+		D59ACADAC5BCC03493D1F8EB0A5AB842 /* InitializerOverloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C292F08A6827DD942260F647F266F /* InitializerOverloads.swift */; };
+		D5E24FD49989A9AB82FEEC02471007A2 /* Swifter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC61875A5D1C31941DD60749D12651F9 /* Swifter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D659C701351EE051B8994448409639A4 /* Scopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E21C8063B202B5CE25E7DD83C87A76 /* Scopes.swift */; };
+		D791A7DDF69B68641D2D95F10336759C /* TitanQueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E26D3B46ED22861387C352395C8C8EC /* TitanQueryString.swift */; };
+		D90A9ADF8F6CFDE07CE34D757BFAFE23 /* TitanLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5CF92FC09E83FCBEDF3182403E1B46 /* TitanLogs.swift */; };
+		E0410554EF59B2D2DEF8DE7CE8A44CB6 /* TitanRoutingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9BED0CB5935187D7B9B218B8FB4C33 /* TitanRoutingExtension.swift */; };
+		E264D0D6396BF73AB0DEB63B267CB132 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1BAF324A7CEB84D34A15F6C1033ED /* SSLSecurity.swift */; };
+		E27AE731769412D7AF180A4B62E6EE89 /* SlackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A552609A7498FB50792536845003C /* SlackError.swift */; };
+		E32A1C59061C668D8E4F2D976A4782AB /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52733475F1B639D45CB6756AC42297CC /* Scope.swift */; };
+		E97E29FF662D831D13C8651109D56A26 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818049DD5367BE15503FE812A80CE981 /* User.swift */; };
+		EAD1EC7B2473C3832EF788360B41F602 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A72689F242FD00897FF9C9B2F75DE4E /* Item.swift */; };
+		EC978F5ABA03954B5ACA44037B2158D0 /* TitanErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA72B7D5962833A3D6AD2D22CC01886 /* TitanErrorHandling.swift */; };
+		ED4C324D714868E8E680EE1401E53E9D /* TitanHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CA420693FDB77240C5DFD74DA7E4DB /* TitanHeader.swift */; };
+		F170693D5B309CE8D5C513ABCA0C2027 /* Pods-SlackMoj-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF093FCA72B3BEAF61E80AE43DFA7 /* Pods-SlackMoj-dummy.m */; };
+		F255585E1952817E8289CB966D770894 /* Reply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EDAF142B386BF38FB8760D89357B5 /* Reply.swift */; };
+		F29997A33B62ABD32F213A9689DC9BA5 /* SKResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E33F530CB89DC62D50EF1E18196E7 /* SKResponse.swift */; };
+		F3349E903D03EB14EDCCC03ACDBBBB40 /* TitanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A707F8B2C7002077124E74FB30352E /* TitanResponse.swift */; };
+		F559826EAE5BE7B9142E2E5E6B5C7A49 /* WebhookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E647B60CEE2FD3EB0AE744F963630 /* WebhookRequest.swift */; };
+		F97754641F6D73866CB19868F973AEF7 /* TitanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646161724C94376334CF46FBE7B14DC5 /* TitanRequest.swift */; };
+		FB3C966BEB7CF64B825887B8D0506175 /* SlackKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B2EC747C35E48B0C0A489C533036C2 /* SlackKit.swift */; };
+		FCDCBEBBECF757E40F6CC7F07DF344A4 /* Reaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558A7D7B27C05F3ED08613471BCA7ED6 /* Reaction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AE33667CE392C5C2612B0C680EA130E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 233BE19701456941DE77C8F5A6D87D42;
+			remoteInfo = Starscream;
+		};
+		A7FD3AB1ECB0C40B0CC0D4A94A544E87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3076FCF70963AEEE41599BCE026113F1;
+			remoteInfo = SlackKit;
+		};
+		A90601FD2BAEFF5460F56F086379FF74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 233BE19701456941DE77C8F5A6D87D42;
+			remoteInfo = Starscream;
+		};
+		A945D19A3EEDB577EC119D0598271269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65956B86AA626897CA1A2809E0CDC1F8;
+			remoteInfo = Swifter;
+		};
+		F3097852C11A6A1BE99B6393CD85ACBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65956B86AA626897CA1A2809E0CDC1F8;
+			remoteInfo = Swifter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045EDAF142B386BF38FB8760D89357B5 /* Reply.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reply.swift; path = SKCore/Sources/Reply.swift; sourceTree = "<group>"; };
+		06B2EC747C35E48B0C0A489C533036C2 /* SlackKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlackKit.swift; path = SlackKit/Sources/SlackKit.swift; sourceTree = "<group>"; };
+		0C49983C27668B5ED5CE5301B2652043 /* TitanFormURLEncodedBodyParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanFormURLEncodedBodyParser.swift; path = SKServer/Sources/Titan/TitanFormURLEncodedBodyParser/TitanFormURLEncodedBodyParser.swift; sourceTree = "<group>"; };
+		0FE197DA090A9A89D1BB9C3A2859A876 /* TitanCore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanCore.swift; path = SKServer/Sources/Titan/TitanCore/TitanCore.swift; sourceTree = "<group>"; };
+		102D6C41C3579ED3067DD3815EE4589C /* ResponseMiddleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseMiddleware.swift; path = SKServer/Sources/Middleware/ResponseMiddleware.swift; sourceTree = "<group>"; };
+		11D5386C1BCF545952B0E418E320E617 /* Process.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Process.swift; path = Sources/Process.swift; sourceTree = "<group>"; };
+		1310E94A5B17604AAFF7BE822778FD81 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		1316AAC8CD504BF704920056DB7D6C23 /* DemoServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DemoServer.swift; path = Sources/DemoServer.swift; sourceTree = "<group>"; };
+		15FFBBDA71C946F73C10B5B4BF4FA81B /* Swifter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Swifter-Info.plist"; sourceTree = "<group>"; };
+		1C2ED1190CC020396F3B2CBD66BEA632 /* SlackKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlackKit-prefix.pch"; sourceTree = "<group>"; };
+		1C88AA0523F38EAF40CA4A65591F9ACF /* Team.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Team.swift; path = SKCore/Sources/Team.swift; sourceTree = "<group>"; };
+		22E1371FDEC9AC6BB19B3BD716BF2C52 /* WebSockets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSockets.swift; path = Sources/WebSockets.swift; sourceTree = "<group>"; };
+		230904805549AE3229EE82020B10D578 /* IncomingWebhook.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IncomingWebhook.swift; path = SKServer/Sources/Model/IncomingWebhook.swift; sourceTree = "<group>"; };
+		25F3D68EBE3157C6491F17E5B64BDA2B /* Pods-SlackMoj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlackMoj.release.xcconfig"; sourceTree = "<group>"; };
+		262FEEA7AA49EB3461040CFDFF3C4863 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = SKCore/Sources/Message.swift; sourceTree = "<group>"; };
+		2A72689F242FD00897FF9C9B2F75DE4E /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = SKCore/Sources/Item.swift; sourceTree = "<group>"; };
+		2E74B520E27BB84AA9A32A08FF4CD551 /* Bot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bot.swift; path = SKCore/Sources/Bot.swift; sourceTree = "<group>"; };
+		304E647B60CEE2FD3EB0AE744F963630 /* WebhookRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebhookRequest.swift; path = SKServer/Sources/Model/WebhookRequest.swift; sourceTree = "<group>"; };
+		35E12BED3F62EF254E4D105F8716C83C /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
+		36B11CFBBB1E8BE893A25783690289A7 /* Swifter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Swifter.modulemap; sourceTree = "<group>"; };
+		36CA9E44B74BC7BFC2B01E223F8C5386 /* Pods-SlackMoj-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SlackMoj-acknowledgements.markdown"; sourceTree = "<group>"; };
+		399D5797EB67F5A0F5182F46D1429754 /* AuthorizeResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizeResponse.swift; path = SKServer/Sources/Model/AuthorizeResponse.swift; sourceTree = "<group>"; };
+		3A41662F2528863C95306E214DCCFF31 /* SKRTMAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKRTMAPI.swift; path = SKRTMAPI/Sources/SKRTMAPI.swift; sourceTree = "<group>"; };
+		3C22578F6EDF6899DB3B56A94F8B7436 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SKCore/Sources/Extensions.swift; sourceTree = "<group>"; };
+		3E041797CAAA1486E8D37527E0B16268 /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Swifter.framework; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1F34F4A104DF1C85D630B351AB38EA /* TitanRoutesByMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanRoutesByMethod.swift; path = SKServer/Sources/Titan/TitanRouter/TitanRoutesByMethod.swift; sourceTree = "<group>"; };
+		45153F3C48046FC3ABD965F6AF0475AC /* Comment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = SKCore/Sources/Comment.swift; sourceTree = "<group>"; };
+		45E4A390E0A34672880DA05945A529E5 /* TitanMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanMethod.swift; path = SKServer/Sources/Titan/TitanCore/TitanMethod.swift; sourceTree = "<group>"; };
+		46641492D675149BECED59A09E4D5436 /* TitanHealthz.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanHealthz.swift; path = SKServer/Sources/Titan/TitanHealthz/TitanHealthz.swift; sourceTree = "<group>"; };
+		468931EFA441C585424865F38C4EE0B6 /* Pods-SlackMoj-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlackMoj-umbrella.h"; sourceTree = "<group>"; };
+		473DAD977BBB40FB2F7A6C0C579D3F91 /* TitanParameterizedRoutes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanParameterizedRoutes.swift; path = SKServer/Sources/Titan/TitanRouter/TitanParameterizedRoutes.swift; sourceTree = "<group>"; };
+		4B7DF093FCA72B3BEAF61E80AE43DFA7 /* Pods-SlackMoj-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlackMoj-dummy.m"; sourceTree = "<group>"; };
+		4E1418A09339B6C9D701370D8B0ACE72 /* Errno.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errno.swift; path = Sources/Errno.swift; sourceTree = "<group>"; };
+		4E4BC770ABE78FA235E0D1FB28D59769 /* Socket+Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Socket+Server.swift"; path = "Sources/Socket+Server.swift"; sourceTree = "<group>"; };
+		50515F658190359B466632AF793E4D9A /* Swifter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swifter-prefix.pch"; sourceTree = "<group>"; };
+		51AE851F35DAA294C79E94AD93BE3284 /* SKServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKServer.swift; path = SKServer/Sources/SKServer.swift; sourceTree = "<group>"; };
+		52733475F1B639D45CB6756AC42297CC /* Scope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scope.swift; path = SKCore/Sources/Scope.swift; sourceTree = "<group>"; };
+		52EA3BB8BD56FCA92A99225A140B602A /* PathParameterSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathParameterSupport.swift; path = SKServer/Sources/Titan/TitanRouter/PathParameterSupport.swift; sourceTree = "<group>"; };
+		5439D93C6B28F4A209C52F72BF92A0D4 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		558A7D7B27C05F3ED08613471BCA7ED6 /* Reaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reaction.swift; path = SKCore/Sources/Reaction.swift; sourceTree = "<group>"; };
+		57767E89E7C685DF6A60367B18AE40D5 /* Titan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Titan.swift; path = SKServer/Sources/Titan/Titan/Titan.swift; sourceTree = "<group>"; };
+		57B836F70E160C02806C53ED178C05E3 /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
+		583FFDD3FC04A46EEE560190A2903045 /* Pods_SlackMoj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SlackMoj.framework; path = "Pods-SlackMoj.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58CA420693FDB77240C5DFD74DA7E4DB /* TitanHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanHeader.swift; path = SKServer/Sources/Titan/TitanCore/TitanHeader.swift; sourceTree = "<group>"; };
+		5A701529BBE43CB8586EDFFA33EAB085 /* Socket+File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Socket+File.swift"; path = "Sources/Socket+File.swift"; sourceTree = "<group>"; };
+		5AF667245B58150D45522FC9F17C2BF9 /* Client.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Client.swift; path = SKClient/Sources/Client.swift; sourceTree = "<group>"; };
+		5BECB7EE7DFA8C0A0E31DE3AFB8F04AA /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		5E0A552609A7498FB50792536845003C /* SlackError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlackError.swift; path = SKCore/Sources/SlackError.swift; sourceTree = "<group>"; };
+		60134394D36CE09D1EE4A65D1778394F /* HttpServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpServer.swift; path = Sources/HttpServer.swift; sourceTree = "<group>"; };
+		612A33B97C914F9EDADAC82173951B70 /* Swifter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Swifter-dummy.m"; sourceTree = "<group>"; };
+		619F1C4766454C24783A78CC7904164D /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = SKWebAPI/Sources/Endpoint.swift; sourceTree = "<group>"; };
+		646161724C94376334CF46FBE7B14DC5 /* TitanRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanRequest.swift; path = SKServer/Sources/Titan/TitanCore/TitanRequest.swift; sourceTree = "<group>"; };
+		646E25434E70A0172E488F3FA130B77B /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6479B0CCF9991E77D7D7150C2B716DE7 /* OAuthConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthConfig.swift; path = SKCore/Sources/OAuthConfig.swift; sourceTree = "<group>"; };
+		691D032404D4007FAE1C3A76983C59BF /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2FA47E29EEC22C1CF060225663C7C8 /* String+BASE64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+BASE64.swift"; path = "Sources/String+BASE64.swift"; sourceTree = "<group>"; };
+		6E26D3B46ED22861387C352395C8C8EC /* TitanQueryString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanQueryString.swift; path = SKServer/Sources/Titan/TitanQueryString/TitanQueryString.swift; sourceTree = "<group>"; };
+		6E39789AC4404243F4B72C2670C254AF /* OAuthMiddleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthMiddleware.swift; path = SKServer/Sources/Middleware/OAuthMiddleware.swift; sourceTree = "<group>"; };
+		6FFA37E192A876E071582824B2B21FB3 /* CustomProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomProfile.swift; path = SKCore/Sources/CustomProfile.swift; sourceTree = "<group>"; };
+		7111B54B5183A37B3B87D2EC18293C57 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		72BCF6B388C12BBAC9D88018512A15E7 /* String+SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SHA1.swift"; path = "Sources/String+SHA1.swift"; sourceTree = "<group>"; };
+		7524C107D063F5B32569D0DA7C33F9C5 /* TeamIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TeamIcon.swift; path = SKCore/Sources/TeamIcon.swift; sourceTree = "<group>"; };
+		7BA88D50F69F12D424204ED2788EFE34 /* StarscreamRTM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarscreamRTM.swift; path = SKRTMAPI/Sources/Conformers/StarscreamRTM.swift; sourceTree = "<group>"; };
+		7C908EBD8BDC1E197BBFBAAC80C5054A /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
+		7D9BED0CB5935187D7B9B218B8FB4C33 /* TitanRoutingExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanRoutingExtension.swift; path = SKServer/Sources/Titan/TitanRouter/TitanRoutingExtension.swift; sourceTree = "<group>"; };
+		7DD4D4141C8F1898A01C61F786CDE5EA /* Channel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = SKCore/Sources/Channel.swift; sourceTree = "<group>"; };
+		7F6AB93EF6320EB0C88C663941060893 /* String+File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+File.swift"; path = "Sources/String+File.swift"; sourceTree = "<group>"; };
+		813AA6DD1BE9281603C677B04DCD3CD6 /* ClientConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientConnection.swift; path = SlackKit/Sources/ClientConnection.swift; sourceTree = "<group>"; };
+		818049DD5367BE15503FE812A80CE981 /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = User.swift; path = SKCore/Sources/User.swift; sourceTree = "<group>"; };
+		83B1812A85FB0C89B90109FE27DA90DE /* RTMOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTMOptions.swift; path = SKCore/Sources/RTMOptions.swift; sourceTree = "<group>"; };
+		84F768170B1471864D3B4A408112998A /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		85D761E7957A2323EBCF61C050BF8618 /* MessageActionRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageActionRoute.swift; path = SKServer/Sources/Model/MessageActionRoute.swift; sourceTree = "<group>"; };
+		863B4A51F812A1C5D3DB7576BACD486B /* MessageActionRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageActionRequest.swift; path = SKServer/Sources/Model/MessageActionRequest.swift; sourceTree = "<group>"; };
+		8DC1BAF324A7CEB84D34A15F6C1033ED /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
+		8E048960B1789C7B844DB4D20DAABA72 /* HttpParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpParser.swift; path = Sources/HttpParser.swift; sourceTree = "<group>"; };
+		8FDA98D156C16D87786DD0A5B0AA779D /* NetworkInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkInterface.swift; path = SKWebAPI/Sources/NetworkInterface.swift; sourceTree = "<group>"; };
+		925A4DB95E91C10F7D42D4CE8F681C12 /* Pods-SlackMoj-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SlackMoj-acknowledgements.plist"; sourceTree = "<group>"; };
+		93FD8445068844C292107839F6A2098B /* HttpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = Sources/HttpRequest.swift; sourceTree = "<group>"; };
+		94E4D9E1A67FCFC81491FE305D250EFF /* SlackKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SlackKit.modulemap; sourceTree = "<group>"; };
+		9584B694B66EF0180D3037BDA16E58A8 /* Titan404.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Titan404.swift; path = SKServer/Sources/Titan/Titan404/Titan404.swift; sourceTree = "<group>"; };
+		9758EDC029FA0E6645BD9A969FFF9B71 /* OAuthResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthResponse.swift; path = SKServer/Sources/Model/OAuthResponse.swift; sourceTree = "<group>"; };
+		97E21C8063B202B5CE25E7DD83C87A76 /* Scopes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scopes.swift; path = Sources/Scopes.swift; sourceTree = "<group>"; };
+		9855A35967BF23E533B4C666713E9ABB /* HttpRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRouter.swift; path = Sources/HttpRouter.swift; sourceTree = "<group>"; };
+		9950A1AA244A2F04B6EF5AC227682063 /* TitanCORS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanCORS.swift; path = SKServer/Sources/Titan/TitanCORS/TitanCORS.swift; sourceTree = "<group>"; };
+		9B92BC6271B14F926BF7132D2A1B163E /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = SKCore/Sources/Event.swift; sourceTree = "<group>"; };
+		9C5CF92FC09E83FCBEDF3182403E1B46 /* TitanLogs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanLogs.swift; path = SKServer/Sources/Titan/TitanCore/TitanLogs.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FA72B7D5962833A3D6AD2D22CC01886 /* TitanErrorHandling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanErrorHandling.swift; path = SKServer/Sources/Titan/TitanErrorHandling/TitanErrorHandling.swift; sourceTree = "<group>"; };
+		A7FE3E53DB00EA9E8044EFDE4B9E9EA0 /* SlackKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlackKit-umbrella.h"; sourceTree = "<group>"; };
+		AA92EFEDBF178EE8C5D707A372CAA755 /* Files.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Files.swift; path = Sources/Files.swift; sourceTree = "<group>"; };
+		AC61875A5D1C31941DD60749D12651F9 /* Swifter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swifter-umbrella.h"; sourceTree = "<group>"; };
+		AF8035D5B547E2DC6CF8C197BF4AB464 /* WebAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebAPI.swift; path = SKWebAPI/Sources/WebAPI.swift; sourceTree = "<group>"; };
+		B2595D37DB4CE39EF3E231098CE0A4CA /* Pods-SlackMoj-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SlackMoj-Info.plist"; sourceTree = "<group>"; };
+		B29086B68C2C91EEE3CAB72E863739A7 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		B31996B6EF1B679FECE76795702CF542 /* MimeTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MimeTypes.swift; path = Sources/MimeTypes.swift; sourceTree = "<group>"; };
+		B424D43E1144FAAD606EE8A9D15EDBA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B9030069E892F320C2589EC56F1602CE /* Attachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attachment.swift; path = SKCore/Sources/Attachment.swift; sourceTree = "<group>"; };
+		BB09EE8418690B5543881218E601A70C /* Topic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Topic.swift; path = SKCore/Sources/Topic.swift; sourceTree = "<group>"; };
+		BD7E33F530CB89DC62D50EF1E18196E7 /* SKResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKResponse.swift; path = SKServer/Sources/Model/SKResponse.swift; sourceTree = "<group>"; };
+		BE1271F5C119702A87436BF76E9CCAA2 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1C1EC9C092568EB6D8F88D18A4BD1E /* MessageActionMiddleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageActionMiddleware.swift; path = SKServer/Sources/Middleware/MessageActionMiddleware.swift; sourceTree = "<group>"; };
+		C679A37CB91392AD81D6BD207CBC4044 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+		C7E737FADACD7E568F456D66893D4CED /* Swifter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swifter.xcconfig; sourceTree = "<group>"; };
+		CA9B3216BE2443DC59AD60A24BB0BFAC /* TitanJSONRequestBody.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanJSONRequestBody.swift; path = SKServer/Sources/Titan/TitanJSON/TitanJSONRequestBody.swift; sourceTree = "<group>"; };
+		CB9A2C658DE629E090283658DB2043E6 /* AttachmentField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttachmentField.swift; path = SKCore/Sources/AttachmentField.swift; sourceTree = "<group>"; };
+		CE539A518B1349F2837E4F678F88B674 /* SlackKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlackKit-dummy.m"; sourceTree = "<group>"; };
+		CF08AC50AEAC826266725F578EDD7307 /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = File.swift; path = SKCore/Sources/File.swift; sourceTree = "<group>"; };
+		D05248A7D7C06CB8FC7DF0DD8CCE506B /* Edited.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edited.swift; path = SKCore/Sources/Edited.swift; sourceTree = "<group>"; };
+		D379AC4FA5ECC9C903C2238D3BFF655A /* RedirectMiddleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectMiddleware.swift; path = SKServer/Sources/Middleware/RedirectMiddleware.swift; sourceTree = "<group>"; };
+		D4C1584547822BFD844E5737EAA303A5 /* Pods-SlackMoj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlackMoj.debug.xcconfig"; sourceTree = "<group>"; };
+		D5CFE6C2E05FE678819F2F32521D75E0 /* TitanJSONResponseBody.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanJSONResponseBody.swift; path = SKServer/Sources/Titan/TitanJSON/TitanJSONResponseBody.swift; sourceTree = "<group>"; };
+		D6507C87E5C3420DAE210809D125E9C5 /* CustomProfileField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomProfileField.swift; path = SKCore/Sources/CustomProfileField.swift; sourceTree = "<group>"; };
+		D7550C98040E73CEA67074DA19042DCF /* UserGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserGroup.swift; path = SKCore/Sources/UserGroup.swift; sourceTree = "<group>"; };
+		D75757FB257AE6D461438E550A1B3321 /* Pods-SlackMoj-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlackMoj-frameworks.sh"; sourceTree = "<group>"; };
+		DF85E2FE64493115C484611057210D82 /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = SKCore/Sources/Action.swift; sourceTree = "<group>"; };
+		E00B929202D666D46161FF94FB19B9F0 /* HttpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = Sources/HttpResponse.swift; sourceTree = "<group>"; };
+		E17C98D8F8DEEFE8E1FF95A280270339 /* History.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = History.swift; path = SKCore/Sources/History.swift; sourceTree = "<group>"; };
+		E190403FB086A89FFE120B9507AC3D6A /* String+Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Misc.swift"; path = "Sources/String+Misc.swift"; sourceTree = "<group>"; };
+		E262D7518847DF4E97C18DA7D0F8E90C /* Pods-SlackMoj.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SlackMoj.modulemap"; sourceTree = "<group>"; };
+		E5A707F8B2C7002077124E74FB30352E /* TitanResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanResponse.swift; path = SKServer/Sources/Titan/TitanCore/TitanResponse.swift; sourceTree = "<group>"; };
+		E8995F4251B960C5459252135131CADC /* SlackKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SlackKit-Info.plist"; sourceTree = "<group>"; };
+		EC49EC19D68CC546B24D10E9145CCA02 /* SlackKitResponder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlackKitResponder.swift; path = SKServer/Sources/SlackKitResponder.swift; sourceTree = "<group>"; };
+		EE1D342EA0CEA86769053DF841A57897 /* DoNotDisturbStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoNotDisturbStatus.swift; path = SKCore/Sources/DoNotDisturbStatus.swift; sourceTree = "<group>"; };
+		F2BDC1B9A7193752EFE44D9AB21D3714 /* SlackKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlackKit.xcconfig; sourceTree = "<group>"; };
+		F41AC06E6FF226B3A6A9A9E4D841A6A4 /* SlackKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SlackKit.framework; path = SlackKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D1B53C3D4C847F9E0F467139F613B9 /* HttpServerIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpServerIO.swift; path = Sources/HttpServerIO.swift; sourceTree = "<group>"; };
+		F652F3BD35272913B2AD52106B4C481F /* SwifterServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwifterServer.swift; path = SKServer/Sources/Conformers/SwifterServer.swift; sourceTree = "<group>"; };
+		F9BF29C066B8016EC1422B43E29CE22F /* TitanError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TitanError.swift; path = SKServer/Sources/Titan/TitanCore/TitanError.swift; sourceTree = "<group>"; };
+		FCC4EDEBC7E9ED93BC02A3E9333FD49F /* RequestRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestRoute.swift; path = SKServer/Sources/Model/RequestRoute.swift; sourceTree = "<group>"; };
+		FF0C292F08A6827DD942260F647F266F /* InitializerOverloads.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InitializerOverloads.swift; path = SKServer/Sources/Titan/TitanRouter/InitializerOverloads.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E0399E58E25E4E43135A900E047ECFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E737D13E150C4E947FC18EA0B0958D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEFB5C0FA59368E3EB5641F654B0AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BE17C70049FFEB3A550015FCA1051B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10C2216DF917D49F112015C7CB2FE4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF5FFD3A1F64B9DC8D3C4CBA86F6655 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA1ACC3010D504FB8690F4C295555271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08055FCA8BC396F5A6233FB07395C495 /* Foundation.framework in Frameworks */,
+				CB04BFC900275EFA329D270B41E9338F /* Starscream.framework in Frameworks */,
+				7CB8726ACFEFBB05795702F583CDEB83 /* Swifter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2335508C18818012E4DECE1C2F7B7EA8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36B11CFBBB1E8BE893A25783690289A7 /* Swifter.modulemap */,
+				C7E737FADACD7E568F456D66893D4CED /* Swifter.xcconfig */,
+				612A33B97C914F9EDADAC82173951B70 /* Swifter-dummy.m */,
+				15FFBBDA71C946F73C10B5B4BF4FA81B /* Swifter-Info.plist */,
+				50515F658190359B466632AF793E4D9A /* Swifter-prefix.pch */,
+				AC61875A5D1C31941DD60749D12651F9 /* Swifter-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Swifter";
+			sourceTree = "<group>";
+		};
+		37B86482B0231655957AE650776ECBB7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C34CD5378AD0641E5CE66C62D5109D3 /* Pods-SlackMoj */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3F004F4DF15490F595A078CCAD51063F /* SKCore */ = {
+			isa = PBXGroup;
+			children = (
+				DF85E2FE64493115C484611057210D82 /* Action.swift */,
+				B9030069E892F320C2589EC56F1602CE /* Attachment.swift */,
+				CB9A2C658DE629E090283658DB2043E6 /* AttachmentField.swift */,
+				2E74B520E27BB84AA9A32A08FF4CD551 /* Bot.swift */,
+				7DD4D4141C8F1898A01C61F786CDE5EA /* Channel.swift */,
+				45153F3C48046FC3ABD965F6AF0475AC /* Comment.swift */,
+				6FFA37E192A876E071582824B2B21FB3 /* CustomProfile.swift */,
+				D6507C87E5C3420DAE210809D125E9C5 /* CustomProfileField.swift */,
+				EE1D342EA0CEA86769053DF841A57897 /* DoNotDisturbStatus.swift */,
+				D05248A7D7C06CB8FC7DF0DD8CCE506B /* Edited.swift */,
+				9B92BC6271B14F926BF7132D2A1B163E /* Event.swift */,
+				3C22578F6EDF6899DB3B56A94F8B7436 /* Extensions.swift */,
+				CF08AC50AEAC826266725F578EDD7307 /* File.swift */,
+				E17C98D8F8DEEFE8E1FF95A280270339 /* History.swift */,
+				2A72689F242FD00897FF9C9B2F75DE4E /* Item.swift */,
+				262FEEA7AA49EB3461040CFDFF3C4863 /* Message.swift */,
+				6479B0CCF9991E77D7D7150C2B716DE7 /* OAuthConfig.swift */,
+				558A7D7B27C05F3ED08613471BCA7ED6 /* Reaction.swift */,
+				045EDAF142B386BF38FB8760D89357B5 /* Reply.swift */,
+				83B1812A85FB0C89B90109FE27DA90DE /* RTMOptions.swift */,
+				52733475F1B639D45CB6756AC42297CC /* Scope.swift */,
+				5E0A552609A7498FB50792536845003C /* SlackError.swift */,
+				1C88AA0523F38EAF40CA4A65591F9ACF /* Team.swift */,
+				7524C107D063F5B32569D0DA7C33F9C5 /* TeamIcon.swift */,
+				BB09EE8418690B5543881218E601A70C /* Topic.swift */,
+				818049DD5367BE15503FE812A80CE981 /* User.swift */,
+				D7550C98040E73CEA67074DA19042DCF /* UserGroup.swift */,
+			);
+			name = SKCore;
+			sourceTree = "<group>";
+		};
+		51B69AEB30EB6BC98180C5ED732F1CC2 /* SKClient */ = {
+			isa = PBXGroup;
+			children = (
+				5AF667245B58150D45522FC9F17C2BF9 /* Client.swift */,
+			);
+			name = SKClient;
+			sourceTree = "<group>";
+		};
+		5C34CD5378AD0641E5CE66C62D5109D3 /* Pods-SlackMoj */ = {
+			isa = PBXGroup;
+			children = (
+				E262D7518847DF4E97C18DA7D0F8E90C /* Pods-SlackMoj.modulemap */,
+				36CA9E44B74BC7BFC2B01E223F8C5386 /* Pods-SlackMoj-acknowledgements.markdown */,
+				925A4DB95E91C10F7D42D4CE8F681C12 /* Pods-SlackMoj-acknowledgements.plist */,
+				4B7DF093FCA72B3BEAF61E80AE43DFA7 /* Pods-SlackMoj-dummy.m */,
+				D75757FB257AE6D461438E550A1B3321 /* Pods-SlackMoj-frameworks.sh */,
+				B2595D37DB4CE39EF3E231098CE0A4CA /* Pods-SlackMoj-Info.plist */,
+				468931EFA441C585424865F38C4EE0B6 /* Pods-SlackMoj-umbrella.h */,
+				D4C1584547822BFD844E5737EAA303A5 /* Pods-SlackMoj.debug.xcconfig */,
+				25F3D68EBE3157C6491F17E5B64BDA2B /* Pods-SlackMoj.release.xcconfig */,
+			);
+			name = "Pods-SlackMoj";
+			path = "Target Support Files/Pods-SlackMoj";
+			sourceTree = "<group>";
+		};
+		5F8A9D3C696EBBFAAF38028B2649F03F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D8FCE7B021007419E79E838D3DD5FB7 /* SlackKit */,
+				CC079895518836EB0FC926D881270FA6 /* Starscream */,
+				6EFED5EDF5D0802A0F7CBFA922EE6D9E /* Swifter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D3C49C7FCC4D05BAB7B7818A7D3A801 /* SKRTMAPI */ = {
+			isa = PBXGroup;
+			children = (
+				3A41662F2528863C95306E214DCCFF31 /* SKRTMAPI.swift */,
+				7BA88D50F69F12D424204ED2788EFE34 /* StarscreamRTM.swift */,
+			);
+			name = SKRTMAPI;
+			sourceTree = "<group>";
+		};
+		6EFED5EDF5D0802A0F7CBFA922EE6D9E /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				1316AAC8CD504BF704920056DB7D6C23 /* DemoServer.swift */,
+				4E1418A09339B6C9D701370D8B0ACE72 /* Errno.swift */,
+				AA92EFEDBF178EE8C5D707A372CAA755 /* Files.swift */,
+				8E048960B1789C7B844DB4D20DAABA72 /* HttpParser.swift */,
+				93FD8445068844C292107839F6A2098B /* HttpRequest.swift */,
+				E00B929202D666D46161FF94FB19B9F0 /* HttpResponse.swift */,
+				9855A35967BF23E533B4C666713E9ABB /* HttpRouter.swift */,
+				60134394D36CE09D1EE4A65D1778394F /* HttpServer.swift */,
+				F4D1B53C3D4C847F9E0F467139F613B9 /* HttpServerIO.swift */,
+				B31996B6EF1B679FECE76795702CF542 /* MimeTypes.swift */,
+				11D5386C1BCF545952B0E418E320E617 /* Process.swift */,
+				97E21C8063B202B5CE25E7DD83C87A76 /* Scopes.swift */,
+				7C908EBD8BDC1E197BBFBAAC80C5054A /* Socket.swift */,
+				5A701529BBE43CB8586EDFFA33EAB085 /* Socket+File.swift */,
+				4E4BC770ABE78FA235E0D1FB28D59769 /* Socket+Server.swift */,
+				6C2FA47E29EEC22C1CF060225663C7C8 /* String+BASE64.swift */,
+				7F6AB93EF6320EB0C88C663941060893 /* String+File.swift */,
+				E190403FB086A89FFE120B9507AC3D6A /* String+Misc.swift */,
+				72BCF6B388C12BBAC9D88018512A15E7 /* String+SHA1.swift */,
+				22E1371FDEC9AC6BB19B3BD716BF2C52 /* WebSockets.swift */,
+				2335508C18818012E4DECE1C2F7B7EA8 /* Support Files */,
+			);
+			name = Swifter;
+			path = Swifter;
+			sourceTree = "<group>";
+		};
+		7D8FCE7B021007419E79E838D3DD5FB7 /* SlackKit */ = {
+			isa = PBXGroup;
+			children = (
+				51B69AEB30EB6BC98180C5ED732F1CC2 /* SKClient */,
+				3F004F4DF15490F595A078CCAD51063F /* SKCore */,
+				6D3C49C7FCC4D05BAB7B7818A7D3A801 /* SKRTMAPI */,
+				9C825D2001B6E29AE696B010044AE18C /* SKServer */,
+				84CDDB75A722056C861CA1B0C41E9B1E /* SKWebAPI */,
+				C05B671E48426DDAFF2608DA91EA99A5 /* SlackKit */,
+				AF6C4E6C9BF9609C74974C2DC67713A8 /* Support Files */,
+			);
+			name = SlackKit;
+			path = SlackKit;
+			sourceTree = "<group>";
+		};
+		8326901C0C0FC0B543EB9CD28EA95907 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE1271F5C119702A87436BF76E9CCAA2 /* Starscream.framework */,
+				646E25434E70A0172E488F3FA130B77B /* Swifter.framework */,
+				9A5E92CF0B6457C93175BD57ECA07060 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84CDDB75A722056C861CA1B0C41E9B1E /* SKWebAPI */ = {
+			isa = PBXGroup;
+			children = (
+				619F1C4766454C24783A78CC7904164D /* Endpoint.swift */,
+				8FDA98D156C16D87786DD0A5B0AA779D /* NetworkInterface.swift */,
+				AF8035D5B547E2DC6CF8C197BF4AB464 /* WebAPI.swift */,
+			);
+			name = SKWebAPI;
+			sourceTree = "<group>";
+		};
+		9A5E92CF0B6457C93175BD57ECA07060 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B424D43E1144FAAD606EE8A9D15EDBA0 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9C825D2001B6E29AE696B010044AE18C /* SKServer */ = {
+			isa = PBXGroup;
+			children = (
+				399D5797EB67F5A0F5182F46D1429754 /* AuthorizeResponse.swift */,
+				230904805549AE3229EE82020B10D578 /* IncomingWebhook.swift */,
+				FF0C292F08A6827DD942260F647F266F /* InitializerOverloads.swift */,
+				BF1C1EC9C092568EB6D8F88D18A4BD1E /* MessageActionMiddleware.swift */,
+				863B4A51F812A1C5D3DB7576BACD486B /* MessageActionRequest.swift */,
+				85D761E7957A2323EBCF61C050BF8618 /* MessageActionRoute.swift */,
+				6E39789AC4404243F4B72C2670C254AF /* OAuthMiddleware.swift */,
+				9758EDC029FA0E6645BD9A969FFF9B71 /* OAuthResponse.swift */,
+				52EA3BB8BD56FCA92A99225A140B602A /* PathParameterSupport.swift */,
+				D379AC4FA5ECC9C903C2238D3BFF655A /* RedirectMiddleware.swift */,
+				FCC4EDEBC7E9ED93BC02A3E9333FD49F /* RequestRoute.swift */,
+				102D6C41C3579ED3067DD3815EE4589C /* ResponseMiddleware.swift */,
+				BD7E33F530CB89DC62D50EF1E18196E7 /* SKResponse.swift */,
+				51AE851F35DAA294C79E94AD93BE3284 /* SKServer.swift */,
+				EC49EC19D68CC546B24D10E9145CCA02 /* SlackKitResponder.swift */,
+				F652F3BD35272913B2AD52106B4C481F /* SwifterServer.swift */,
+				57767E89E7C685DF6A60367B18AE40D5 /* Titan.swift */,
+				9584B694B66EF0180D3037BDA16E58A8 /* Titan404.swift */,
+				0FE197DA090A9A89D1BB9C3A2859A876 /* TitanCore.swift */,
+				9950A1AA244A2F04B6EF5AC227682063 /* TitanCORS.swift */,
+				F9BF29C066B8016EC1422B43E29CE22F /* TitanError.swift */,
+				9FA72B7D5962833A3D6AD2D22CC01886 /* TitanErrorHandling.swift */,
+				0C49983C27668B5ED5CE5301B2652043 /* TitanFormURLEncodedBodyParser.swift */,
+				58CA420693FDB77240C5DFD74DA7E4DB /* TitanHeader.swift */,
+				46641492D675149BECED59A09E4D5436 /* TitanHealthz.swift */,
+				CA9B3216BE2443DC59AD60A24BB0BFAC /* TitanJSONRequestBody.swift */,
+				D5CFE6C2E05FE678819F2F32521D75E0 /* TitanJSONResponseBody.swift */,
+				9C5CF92FC09E83FCBEDF3182403E1B46 /* TitanLogs.swift */,
+				45E4A390E0A34672880DA05945A529E5 /* TitanMethod.swift */,
+				473DAD977BBB40FB2F7A6C0C579D3F91 /* TitanParameterizedRoutes.swift */,
+				6E26D3B46ED22861387C352395C8C8EC /* TitanQueryString.swift */,
+				646161724C94376334CF46FBE7B14DC5 /* TitanRequest.swift */,
+				E5A707F8B2C7002077124E74FB30352E /* TitanResponse.swift */,
+				3F1F34F4A104DF1C85D630B351AB38EA /* TitanRoutesByMethod.swift */,
+				7D9BED0CB5935187D7B9B218B8FB4C33 /* TitanRoutingExtension.swift */,
+				304E647B60CEE2FD3EB0AE744F963630 /* WebhookRequest.swift */,
+			);
+			name = SKServer;
+			sourceTree = "<group>";
+		};
+		AF6C4E6C9BF9609C74974C2DC67713A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94E4D9E1A67FCFC81491FE305D250EFF /* SlackKit.modulemap */,
+				F2BDC1B9A7193752EFE44D9AB21D3714 /* SlackKit.xcconfig */,
+				CE539A518B1349F2837E4F678F88B674 /* SlackKit-dummy.m */,
+				E8995F4251B960C5459252135131CADC /* SlackKit-Info.plist */,
+				1C2ED1190CC020396F3B2CBD66BEA632 /* SlackKit-prefix.pch */,
+				A7FE3E53DB00EA9E8044EFDE4B9E9EA0 /* SlackKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SlackKit";
+			sourceTree = "<group>";
+		};
+		C05B671E48426DDAFF2608DA91EA99A5 /* SlackKit */ = {
+			isa = PBXGroup;
+			children = (
+				813AA6DD1BE9281603C677B04DCD3CD6 /* ClientConnection.swift */,
+				06B2EC747C35E48B0C0A489C533036C2 /* SlackKit.swift */,
+			);
+			name = SlackKit;
+			sourceTree = "<group>";
+		};
+		C4BE5DBC0B098AC56AA912E5E70C9E7D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BECB7EE7DFA8C0A0E31DE3AFB8F04AA /* Starscream.modulemap */,
+				C679A37CB91392AD81D6BD207CBC4044 /* Starscream.xcconfig */,
+				5439D93C6B28F4A209C52F72BF92A0D4 /* Starscream-dummy.m */,
+				7111B54B5183A37B3B87D2EC18293C57 /* Starscream-Info.plist */,
+				84F768170B1471864D3B4A408112998A /* Starscream-prefix.pch */,
+				1310E94A5B17604AAFF7BE822778FD81 /* Starscream-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		CC079895518836EB0FC926D881270FA6 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				35E12BED3F62EF254E4D105F8716C83C /* Compression.swift */,
+				57B836F70E160C02806C53ED178C05E3 /* SSLClientCertificate.swift */,
+				8DC1BAF324A7CEB84D34A15F6C1033ED /* SSLSecurity.swift */,
+				B29086B68C2C91EEE3CAB72E863739A7 /* WebSocket.swift */,
+				C4BE5DBC0B098AC56AA912E5E70C9E7D /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8326901C0C0FC0B543EB9CD28EA95907 /* Frameworks */,
+				5F8A9D3C696EBBFAAF38028B2649F03F /* Pods */,
+				E161E7026E0024A87F0E523DD292B8C8 /* Products */,
+				37B86482B0231655957AE650776ECBB7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E161E7026E0024A87F0E523DD292B8C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				583FFDD3FC04A46EEE560190A2903045 /* Pods_SlackMoj.framework */,
+				F41AC06E6FF226B3A6A9A9E4D841A6A4 /* SlackKit.framework */,
+				691D032404D4007FAE1C3A76983C59BF /* Starscream.framework */,
+				3E041797CAAA1486E8D37527E0B16268 /* Swifter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		534832837729443FD546ACD0B0EF24B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E24FD49989A9AB82FEEC02471007A2 /* Swifter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		626DF7534C51035C7FEEF8DB49B35955 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B6FD1BA41F1E2B206A40C996EE87B5 /* Pods-SlackMoj-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD3EE5EBCD3C81D24BAD70536A28A7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F28A64B973AA30DF17234532B3460C /* SlackKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DD2670BE263811E58603839516B168D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				876C0C399BE82E6A7F980B6BF48D39B0 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		233BE19701456941DE77C8F5A6D87D42 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DEEEED7FA8CDA85C0E3373AF8C9BD86 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				9DD2670BE263811E58603839516B168D /* Headers */,
+				57434556910541978DD9BDAC1DD6EBFA /* Sources */,
+				2E0399E58E25E4E43135A900E047ECFA /* Frameworks */,
+				FFFF154E720D4D14810D1C2060CEAEA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 691D032404D4007FAE1C3A76983C59BF /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3076FCF70963AEEE41599BCE026113F1 /* SlackKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22FD00967BCAE78144B91AC8A26B35FA /* Build configuration list for PBXNativeTarget "SlackKit" */;
+			buildPhases = (
+				8BD3EE5EBCD3C81D24BAD70536A28A7A /* Headers */,
+				A3C02B199DE3A7F8301FD8E933FE01EC /* Sources */,
+				BA1ACC3010D504FB8690F4C295555271 /* Frameworks */,
+				B383DE4CB42C3C8D81D1272E07ADEE39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67DFFA2994DE75F922D02A51C32C9618 /* PBXTargetDependency */,
+				634A2466B70B5224B9D5E7EFC7A7E3C6 /* PBXTargetDependency */,
+			);
+			name = SlackKit;
+			productName = SlackKit;
+			productReference = F41AC06E6FF226B3A6A9A9E4D841A6A4 /* SlackKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65956B86AA626897CA1A2809E0CDC1F8 /* Swifter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82F21D855A3F402004C1394AA7E5BB6F /* Build configuration list for PBXNativeTarget "Swifter" */;
+			buildPhases = (
+				534832837729443FD546ACD0B0EF24B0 /* Headers */,
+				9BE3FADB3910A0826E595BB1D0A5A881 /* Sources */,
+				A10C2216DF917D49F112015C7CB2FE4F /* Frameworks */,
+				D5A0DDCC663DA122E417C350B6235C7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swifter;
+			productName = Swifter;
+			productReference = 3E041797CAAA1486E8D37527E0B16268 /* Swifter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9400B8C17059A4647C2E21CA93401C1 /* Pods-SlackMoj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C59C9F6436AB58A5F10EB5C493915DCF /* Build configuration list for PBXNativeTarget "Pods-SlackMoj" */;
+			buildPhases = (
+				626DF7534C51035C7FEEF8DB49B35955 /* Headers */,
+				08E688191F3A9E16AAD819B4DE66BAE7 /* Sources */,
+				6DEFB5C0FA59368E3EB5641F654B0AF4 /* Frameworks */,
+				662E579F46A5C6E1671DCDF6284BD812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				928B3330E50746D7E3BA6FBB2157DDFB /* PBXTargetDependency */,
+				F77FF71FBCDBCF7B7EA6E7830F08139D /* PBXTargetDependency */,
+				4FD03156026F89CB0121E70A60AC6576 /* PBXTargetDependency */,
+			);
+			name = "Pods-SlackMoj";
+			productName = "Pods-SlackMoj";
+			productReference = 583FFDD3FC04A46EEE560190A2903045 /* Pods_SlackMoj.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E161E7026E0024A87F0E523DD292B8C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9400B8C17059A4647C2E21CA93401C1 /* Pods-SlackMoj */,
+				3076FCF70963AEEE41599BCE026113F1 /* SlackKit */,
+				233BE19701456941DE77C8F5A6D87D42 /* Starscream */,
+				65956B86AA626897CA1A2809E0CDC1F8 /* Swifter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		662E579F46A5C6E1671DCDF6284BD812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B383DE4CB42C3C8D81D1272E07ADEE39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A0DDCC663DA122E417C350B6235C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFF154E720D4D14810D1C2060CEAEA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08E688191F3A9E16AAD819B4DE66BAE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F170693D5B309CE8D5C513ABCA0C2027 /* Pods-SlackMoj-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57434556910541978DD9BDAC1DD6EBFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7DDB96643F85D1AAC8C2F22E7439F8 /* Compression.swift in Sources */,
+				745C09B646CFA90F19666C044C7C9B5E /* SSLClientCertificate.swift in Sources */,
+				E264D0D6396BF73AB0DEB63B267CB132 /* SSLSecurity.swift in Sources */,
+				18ED1B1162C9DF2702A89ECC5C36BC1A /* Starscream-dummy.m in Sources */,
+				832B0A6F9E54194424A4013024686F13 /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BE3FADB3910A0826E595BB1D0A5A881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08ABE1ED63A87A8A441297507CD6971E /* DemoServer.swift in Sources */,
+				21F63C9884A95E1EAFB93A1DADB99D7A /* Errno.swift in Sources */,
+				03C3D6C49E972C79651176E13BE4D3F3 /* Files.swift in Sources */,
+				1757A701C0B692BB3CA714AD9A0DC7EC /* HttpParser.swift in Sources */,
+				5657ED221A25C0A2C14ED50388EE4F83 /* HttpRequest.swift in Sources */,
+				5D6BE4158B954E29434B22E967BA755C /* HttpResponse.swift in Sources */,
+				96464F65F783ABFED0A1AB1C858C74F0 /* HttpRouter.swift in Sources */,
+				7325F7AC1009909B04FD467F3AEB05FA /* HttpServer.swift in Sources */,
+				ADD1AF25D0C80A416D1969A27BBD06B0 /* HttpServerIO.swift in Sources */,
+				01840744520DB863660451F5E16145FA /* MimeTypes.swift in Sources */,
+				450869A48DFFC16D4EE2B42D8083FB82 /* Process.swift in Sources */,
+				D659C701351EE051B8994448409639A4 /* Scopes.swift in Sources */,
+				85A02E10DB2E85AD01D8DA8852E8419C /* Socket+File.swift in Sources */,
+				9CC14E0131297CA99CE8CD7AAFDCFB3A /* Socket+Server.swift in Sources */,
+				13392545C52B5BC4C6AAC226B3AA8A3E /* Socket.swift in Sources */,
+				13D26CBDD9AA43AB73BFF1EBAD308C09 /* String+BASE64.swift in Sources */,
+				D3E73668245F06CBE4BD67B2B8252DDC /* String+File.swift in Sources */,
+				CA20670FDBDF6DB3BAA1EE9BF2F1FE11 /* String+Misc.swift in Sources */,
+				6815C0C7EF13496E29D180EE64E5C2D1 /* String+SHA1.swift in Sources */,
+				75F76E6D842BCC6090653673014FF41E /* Swifter-dummy.m in Sources */,
+				431DA5CFED383D17B6542E31BEC0673A /* WebSockets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3C02B199DE3A7F8301FD8E933FE01EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C93B1ACEE1BE294EA39B3C437E747D /* Action.swift in Sources */,
+				9AAB2DAE090EA1FBB9214C9CE15019A2 /* Attachment.swift in Sources */,
+				A6318C784CB8F2F66E55A231AA843E19 /* AttachmentField.swift in Sources */,
+				2992513EB9B88388C4FF2DBF1160CD94 /* AuthorizeResponse.swift in Sources */,
+				9D6D7DB5768FF6603E7E16F70EF766C3 /* Bot.swift in Sources */,
+				8FA404F5E16B480D2CC85AADB998B51F /* Channel.swift in Sources */,
+				0D3E415AF9D48903C2607205D04C9B65 /* Client.swift in Sources */,
+				00A2FCA1331F116454D9EC46A876C562 /* ClientConnection.swift in Sources */,
+				3F40D77DCE144AB3392EB217DA844F6A /* Comment.swift in Sources */,
+				68E579D9EAE4CD69139B52D1D001009D /* CustomProfile.swift in Sources */,
+				3765847A23D878765E13ABAE0129E420 /* CustomProfileField.swift in Sources */,
+				00D7921E580BE93CA4DBFBC998EA9CD3 /* DoNotDisturbStatus.swift in Sources */,
+				4E359A6596368F1BE93A9A27A9DDBD0C /* Edited.swift in Sources */,
+				229D817BA25824F04CC883C8707DB677 /* Endpoint.swift in Sources */,
+				B48A13AA3322998827DA7550F773D302 /* Event.swift in Sources */,
+				3423B148069A194496F2B08A20148DB3 /* Extensions.swift in Sources */,
+				38E735BFB44302DDF3232FC46BFF91B7 /* File.swift in Sources */,
+				BDF0585851A3A11B785F2087233AE9B6 /* History.swift in Sources */,
+				0E48DD7499B14B46D8776D4462C72D05 /* IncomingWebhook.swift in Sources */,
+				D59ACADAC5BCC03493D1F8EB0A5AB842 /* InitializerOverloads.swift in Sources */,
+				EAD1EC7B2473C3832EF788360B41F602 /* Item.swift in Sources */,
+				56321789E1CAC330DC969C59B19BE503 /* Message.swift in Sources */,
+				2AD3F0FBFDB883FF6ECC816BD59F37C5 /* MessageActionMiddleware.swift in Sources */,
+				744AAA05740842FCEA11650C5BF45032 /* MessageActionRequest.swift in Sources */,
+				2163A32DECEDD096FED2CEFFD51BDC58 /* MessageActionRoute.swift in Sources */,
+				37403D300EB6D569A064AD2A7BB7E215 /* NetworkInterface.swift in Sources */,
+				AEE12F9FBFE079C4BC0656BE8FC7308E /* OAuthConfig.swift in Sources */,
+				7E1F534AA4B28DE5CD4A4D1BCDA6AEFE /* OAuthMiddleware.swift in Sources */,
+				7CB810AC8E04A517F1CCACAA47E3CF30 /* OAuthResponse.swift in Sources */,
+				9531A4023AA4ADF327BE001C829FD21E /* PathParameterSupport.swift in Sources */,
+				FCDCBEBBECF757E40F6CC7F07DF344A4 /* Reaction.swift in Sources */,
+				76F430B1CB5B37D318AD45061254A16D /* RedirectMiddleware.swift in Sources */,
+				F255585E1952817E8289CB966D770894 /* Reply.swift in Sources */,
+				472237C38282CE8CF4D7897AE810C84D /* RequestRoute.swift in Sources */,
+				3A6A893B0F9ECDFF1FFF5C602C38A797 /* ResponseMiddleware.swift in Sources */,
+				37AF7729CC9498C11F136CCB0796389B /* RTMOptions.swift in Sources */,
+				E32A1C59061C668D8E4F2D976A4782AB /* Scope.swift in Sources */,
+				F29997A33B62ABD32F213A9689DC9BA5 /* SKResponse.swift in Sources */,
+				4BC1E18C30730E59371F709B619EB856 /* SKRTMAPI.swift in Sources */,
+				955F616D902CB7A7B4754AC501D08C5C /* SKServer.swift in Sources */,
+				E27AE731769412D7AF180A4B62E6EE89 /* SlackError.swift in Sources */,
+				26DCD0E0691DC3A944EA5B41597BAB31 /* SlackKit-dummy.m in Sources */,
+				FB3C966BEB7CF64B825887B8D0506175 /* SlackKit.swift in Sources */,
+				41ED3830B4AAFE042B3146FB00A3E397 /* SlackKitResponder.swift in Sources */,
+				0904ABE31C8E0FFDB8E016EDD6776A72 /* StarscreamRTM.swift in Sources */,
+				914FBC76396A7D70E47B628C5A721250 /* SwifterServer.swift in Sources */,
+				7B51C656E8066E1B87961853D20D1DDA /* Team.swift in Sources */,
+				6358BF18ED693B2D673BDE9E3D105BDB /* TeamIcon.swift in Sources */,
+				49E8D73485D3269A768EDE328AA0AB23 /* Titan.swift in Sources */,
+				89DA6E278343ED67D053571E55D7C360 /* Titan404.swift in Sources */,
+				5D0B38466C8574E236DA1417505FC29A /* TitanCore.swift in Sources */,
+				D0C2F8A6DA0F0C18F709A4BC3B8BE0DE /* TitanCORS.swift in Sources */,
+				C4239EBCB9EF983737E836A5E8569956 /* TitanError.swift in Sources */,
+				EC978F5ABA03954B5ACA44037B2158D0 /* TitanErrorHandling.swift in Sources */,
+				9D572310D528977E924919810EA1D5B3 /* TitanFormURLEncodedBodyParser.swift in Sources */,
+				ED4C324D714868E8E680EE1401E53E9D /* TitanHeader.swift in Sources */,
+				BD7379B4699EDA71887DB97BFDAEDBCC /* TitanHealthz.swift in Sources */,
+				5E5418C624FF6E905E15DB9DE50D8420 /* TitanJSONRequestBody.swift in Sources */,
+				C3CA9C888C8AEA0E54175506054B1CCE /* TitanJSONResponseBody.swift in Sources */,
+				D90A9ADF8F6CFDE07CE34D757BFAFE23 /* TitanLogs.swift in Sources */,
+				7AD004566AF8783AE87952E25A440D76 /* TitanMethod.swift in Sources */,
+				4AD94D0D9B9193F23297A20D25438B43 /* TitanParameterizedRoutes.swift in Sources */,
+				D791A7DDF69B68641D2D95F10336759C /* TitanQueryString.swift in Sources */,
+				F97754641F6D73866CB19868F973AEF7 /* TitanRequest.swift in Sources */,
+				F3349E903D03EB14EDCCC03ACDBBBB40 /* TitanResponse.swift in Sources */,
+				5717CF0CBAD88D1059EA1E02E9DBA912 /* TitanRoutesByMethod.swift in Sources */,
+				E0410554EF59B2D2DEF8DE7CE8A44CB6 /* TitanRoutingExtension.swift in Sources */,
+				235C30A5FBDBC7E9A68E41B1501B1C39 /* Topic.swift in Sources */,
+				E97E29FF662D831D13C8651109D56A26 /* User.swift in Sources */,
+				D053F2F99AA4FD425837486079CF3C70 /* UserGroup.swift in Sources */,
+				4DB73285E2517CDF85FE31262CCD72AA /* WebAPI.swift in Sources */,
+				F559826EAE5BE7B9142E2E5E6B5C7A49 /* WebhookRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FD03156026F89CB0121E70A60AC6576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Swifter;
+			target = 65956B86AA626897CA1A2809E0CDC1F8 /* Swifter */;
+			targetProxy = A945D19A3EEDB577EC119D0598271269 /* PBXContainerItemProxy */;
+		};
+		634A2466B70B5224B9D5E7EFC7A7E3C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Swifter;
+			target = 65956B86AA626897CA1A2809E0CDC1F8 /* Swifter */;
+			targetProxy = F3097852C11A6A1BE99B6393CD85ACBE /* PBXContainerItemProxy */;
+		};
+		67DFFA2994DE75F922D02A51C32C9618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 233BE19701456941DE77C8F5A6D87D42 /* Starscream */;
+			targetProxy = 4AE33667CE392C5C2612B0C680EA130E /* PBXContainerItemProxy */;
+		};
+		928B3330E50746D7E3BA6FBB2157DDFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlackKit;
+			target = 3076FCF70963AEEE41599BCE026113F1 /* SlackKit */;
+			targetProxy = A7FD3AB1ECB0C40B0CC0D4A94A544E87 /* PBXContainerItemProxy */;
+		};
+		F77FF71FBCDBCF7B7EA6E7830F08139D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 233BE19701456941DE77C8F5A6D87D42 /* Starscream */;
+			targetProxy = A90601FD2BAEFF5460F56F086379FF74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156DA1437930808830157812A5605899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C679A37CB91392AD81D6BD207CBC4044 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63E975F99ADD53161386C8F2B3C3F0E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2BDC1B9A7193752EFE44D9AB21D3714 /* SlackKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SlackKit/SlackKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlackKit/SlackKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SlackKit/SlackKit.modulemap";
+				PRODUCT_MODULE_NAME = SlackKit;
+				PRODUCT_NAME = SlackKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F297E719C5AE78C03ABE56EBB257C9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C1584547822BFD844E5737EAA303A5 /* Pods-SlackMoj.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SlackMoj/Pods-SlackMoj-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SlackMoj/Pods-SlackMoj.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		870C2EBE8AEEA2A0AA69E3BFDA893653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E737FADACD7E568F456D66893D4CED /* Swifter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Swifter/Swifter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swifter/Swifter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Swifter/Swifter.modulemap";
+				PRODUCT_MODULE_NAME = Swifter;
+				PRODUCT_NAME = Swifter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB14506EF54A852A4E4921AEC6C2167E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E737FADACD7E568F456D66893D4CED /* Swifter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Swifter/Swifter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swifter/Swifter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Swifter/Swifter.modulemap";
+				PRODUCT_MODULE_NAME = Swifter;
+				PRODUCT_NAME = Swifter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EED86F9A37573144E8A61AE8C2A76C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2BDC1B9A7193752EFE44D9AB21D3714 /* SlackKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SlackKit/SlackKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlackKit/SlackKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SlackKit/SlackKit.modulemap";
+				PRODUCT_MODULE_NAME = SlackKit;
+				PRODUCT_NAME = SlackKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F3E89813A1275B692F11D0B1F888561A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C679A37CB91392AD81D6BD207CBC4044 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC133F41D50C78BD6525E524FEB0BB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F3D68EBE3157C6491F17E5B64BDA2B /* Pods-SlackMoj.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SlackMoj/Pods-SlackMoj-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SlackMoj/Pods-SlackMoj.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DEEEED7FA8CDA85C0E3373AF8C9BD86 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E89813A1275B692F11D0B1F888561A /* Debug */,
+				156DA1437930808830157812A5605899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22FD00967BCAE78144B91AC8A26B35FA /* Build configuration list for PBXNativeTarget "SlackKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED86F9A37573144E8A61AE8C2A76C87 /* Debug */,
+				63E975F99ADD53161386C8F2B3C3F0E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */,
+				84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82F21D855A3F402004C1394AA7E5BB6F /* Build configuration list for PBXNativeTarget "Swifter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870C2EBE8AEEA2A0AA69E3BFDA893653 /* Debug */,
+				AB14506EF54A852A4E4921AEC6C2167E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C59C9F6436AB58A5F10EB5C493915DCF /* Build configuration list for PBXNativeTarget "Pods-SlackMoj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F297E719C5AE78C03ABE56EBB257C9D /* Debug */,
+				FC133F41D50C78BD6525E524FEB0BB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
